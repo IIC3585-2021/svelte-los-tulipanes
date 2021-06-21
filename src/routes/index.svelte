@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import App from "./App.svelte"
+</script>
+
+<App/>
+
+<style>
+    :global(body) {
+        background-color: #F5A962;
+    }
+</style>
