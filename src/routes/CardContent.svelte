@@ -20,8 +20,8 @@
 </div>
 <div class="buttons-container">
 	<div class="buttons">
-		<NoButton :id="cat.id" />
-		<YesButton :id="cat.id" />
+		<NoButton catId={cat.id} />
+		<YesButton catId={cat.id} />
 	</div>
 </div>
 
