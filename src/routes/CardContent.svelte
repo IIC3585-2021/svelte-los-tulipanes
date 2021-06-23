@@ -51,6 +51,7 @@
 
 	.buttons-container {
 		width: 100%;
+		padding-bottom: 1rem;
 	}
 
 	.buttons {

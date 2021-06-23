@@ -4,8 +4,6 @@
     export let catId;
     const handling = () => {
         cats.like(catId)
-        // alert("Hello there Yes")
-        console.log(catId)
     }
 </script>
 

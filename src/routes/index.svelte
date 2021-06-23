@@ -4,8 +4,8 @@
 
 <App/>
 
-<style>
+<!-- <style>
     :global(body) {
         background-color: #F5A962;
     }
-</style>
+</style> -->

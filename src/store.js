@@ -8,7 +8,7 @@ const likeStatus = {
 };
 
 const createCats = () => {
-	const { subscribe, update } = writable([]);
+	const { subscribe, update} = writable([]);
 	// Cuando haga referencia a 'cats' voy a estar refiriendome al writable
 	let cats;
 	subscribe((v) => (cats = v));
@@ -38,9 +38,13 @@ const createCats = () => {
 				return catsList;
 			}),
 		add: (cat) =>
-			update((catsList) => {
+			{update((catsList) => {
 				return [...catsList, { ...cat, liked: likeStatus.neutral }];
 			})
+		},
+		hasLoaded: () => {
+			return cats.filter((cat) => cat.liked === likeStatus.neutral).length
+		}
 	};
 };
 

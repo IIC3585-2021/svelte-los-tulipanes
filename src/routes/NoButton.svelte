@@ -4,7 +4,6 @@
     export let catId;
     const handling = () => {
         cats.dislike(catId)
-        console.log(catId)
     }
 </script>
 

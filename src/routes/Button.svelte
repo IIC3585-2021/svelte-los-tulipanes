@@ -22,6 +22,16 @@
         padding: 0.5rem;
         text-transform: uppercase;
         justify-content: space-evenly;
+        border-radius: 50%;
+        height: 6em;
+        width: 6em;
+        justify-items: center;
+        border: 0;
+        cursor: pointer;
+    }
+    button:hover {
+        filter: brightness(120%);
+        transition: filter 100ms linear;
     }
     :global(body.dark-mode) button {
         background-color: #0084f6;
